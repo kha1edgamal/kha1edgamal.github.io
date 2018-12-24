@@ -1,0 +1,553 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="author" content="Khalid Jamal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imgs/favicon.png">
+    <!--Bootstrap Minified-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
+    <!--FontAwesome Styles-->
+    <link rel="stylesheet" href="css/all.css">
+    <!--Animate.css-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--Main Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Media Queries-->
+    <link rel="stylesheet" href="css/media.css">
+    <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="preload">
+    <!-- Back to top button -->
+    <a id="button"></a>
+    <!--Start Preloader Section-->
+    <div class="screen">
+        <div class="loader">
+            <!--Preloader HTML-->
+            <div class="dots-loader"></div>
+        </div>
+    </div>
+    <!--End Preloader Section-->
+    <content id="myContent">
+        <!--Start Header Section-->
+        <header>
+            <div class="top-header">
+                <div class="container">
+                    <div class="top-content wow fadeInDown" data-wow-delay=".5s">
+                        <div class="right-side">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <span><i class="fas fa-phone"></i></span>
+                                    <span>0583679009</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span><i class="fas fa-envelope"></i></span>
+                                    <span>br-536@hotmail.com</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>تبوك - محافظة ضباء - قرية الخريبة</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="left-side">
+                            <ul class="list-inline-item socials">
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!--Screen-Navbar-->
+                <nav class="screen-nav wow fadeIn" style="display: flex">
+                    <div class="right-side">
+                        <img src="imgs/logo.png" alt="Logo..">
+                    </div>
+                    <div class="center-side">
+                        <ul class="list-inline-item ">
+                            <li class="list-inline-item"><a href="#">الرئيسية</a></li>
+                            <li class="list-inline-item"><a href="#">من نحن</a></li>
+                            <li class="list-inline-item menu-item-has-children">
+                                <a href="#">البرامج</a> <span><i class="fas fa-chevron-down"></i></span>
+                                <ul class="sub-menu">
+                                    <li><a href="#">برنامج 1</a></li>
+                                    <li><a href="#">برنامج 2</a></li>
+                                    <li><a href="#">برنامج 3</a></li>
+                                    <li><a href="#">برنامج 4</a></li>
+                                    <li><a href="#">برنامج 5</a></li>
+                                    <li><a href="#">برنامج 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item"><a href="#">الموظفون</a></li>
+                            <li class="list-inline-item"><a href="#">سياسات الجمعية</a></li>
+                            <li class="list-inline-item"><a href="#">القوايم المالية</a></li>
+                            <li class="list-inline-item"><a href="#">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-side">
+                        <a href="#">تبرع الآن</a>
+                    </div>
+                </nav>
+                <!--Mobile-Navbar-->
+                <nav class="mobile-nav" data-wow-delay="1s" style="display: none">
+                    <img src="imgs/logo.png" alt="Logo..">
+                    <div class="button">
+                        <a class="btn-open" href="#"></a>
+                    </div>
+                    <div class="overlay">
+                        <div class="wrap">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        من نحن
+                                    </a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">
+                                        البرامج
+                                    </a>
+                                    <span id="drop-arrow"><i class="fas fa-chevron-down"></i></span>
+                                </li>
+                                <div class="sub-menu" style="display:none">
+                                    <a>برنامج 1</a>
+                                    <a>برنامج 2</a>
+                                    <a>برنامج 3</a>
+                                    <a>برنامج 4</a>
+                                </div>
+                                <li>
+                                    <a href="#">
+                                        الموظفون
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        سياسات الجمعية
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        القوايم المالية
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        تواصل معنا
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr>
+
+                            <div class="social">
+                                <a href="#">
+                                    <div class="social-icon">
+                                        <i class="fab fa-snapchat-ghost"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--End Header Section-->
+
+        <!--Start Title Section-->
+        <section class="title" style="background: url(imgs/slider_1.png);">
+            <div class="container">
+                <h1 class="text-right">الموظفون</h1>
+            </div>
+
+        </section>
+        <!--End Title Section-->
+
+        <!--Start About-Us-Page Content-->
+        <section class="employers">
+            <div class="container">
+                <h1 class="subtitle text-right">موظفون الجمعية</h1>
+                <div class="row">
+                    <div class="col-lg-12 auto-margin">
+                        <div class="wrapper">
+                            <div class="background text-center">
+                                <img src="imgs/employer-bg.png" alt="">
+                                <div class="elipse"></div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgs/logo-footer.png" alt="">
+                            </div>
+                        </div>
+                        <div class="details text-center">
+                            <h5>عطا الله ذياب الفايدي</h5>
+                            <h5>المدير التنفيذي</h5>
+                        </div>
+                    </div>
+                    <div class="sub-employers">
+                        <div class="row">
+                           <!---->
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>يوسف سليمان الزمهري</h5>
+                                    <h5>محاسب</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6" style>
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>عبدالله دخيل الله الحويطي</h5>
+                                    <h5>مدخل بيانات</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>زياد محمد الحويطي</h5>
+                                    <h5>باحث اجتماعي</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>محمد سالم الجوهري</h5>
+                                    <h5>باحث اجتماعي</h5>
+                                </div>
+                            </div>
+                        </div>
+                            <!---->
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>خالد عبد الله الحويطي</h5>
+                                    <h5>مكتب الصادر</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>محمد سليمان حمد الحويطي</h5>
+                                    <h5>امين المستودع</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>خليل احمد محمد الحويطي</h5>
+                                    <h5>الامن</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>عبد الرحمن حمود الطقيقي</h5>
+                                    <h5>سائق</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>سهام سليمان الرقابي</h5>
+                                    <h5>مديرة قسم النساء</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>سارة سالم الحويطي</h5>
+                                    <h5>باحثة اجتماعية</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="wrapper">
+                                    <div class="background text-center">
+                                        <img src="imgs/employer-bg.png" alt="">
+                                        <div class="elipse"></div>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="imgs/logo-footer.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="details text-center">
+                                    <h5>سارة سليمان الحويطي</h5>
+                                    <h5>مدخلة بيانات</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--End About-Us-Page Content-->
+
+
+
+
+        <!--Start Footer Section-->
+        <footer>
+            <div class="container">
+                <div class="top-footer text-right wow fadeIn">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="info">
+                                <img src="imgs/logo-footer.png" alt="Footer Logo">
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد</p>
+                                <h3>تواصل معنا</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-phone"></i></span>
+                                        <span>تبوك - محافظة ضباء - قرية الخريبة</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-envelope"></i></span>
+                                        <span>br-536@hotmail.com</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-map-marker-alt"></i></span>
+                                        <span>دبى 12627، الامارات العربية المتحدة</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="latest-news">
+                                <h3>آخر الاخبار</h3>
+                                <div class="item-1 items">
+                                    <img src="imgs/footer-news.png" alt="">
+                                    <div>
+                                        <h4>التدريب وتصميم البرامج</h4>
+                                        <h4>12 يونيو 2018</h4>
+                                    </div>
+                                </div>
+                                <div class="item-2 items">
+                                    <img src="imgs/footer-news.png" alt="">
+                                    <div>
+                                        <h4>التدريب وتصميم البرامج</h4>
+                                        <h4>12 يونيو 2018</h4>
+                                    </div>
+                                </div>
+                                <div class="item-3 items">
+                                    <img src="imgs/footer-news.png" alt="">
+                                    <div>
+                                        <h4>التدريب وتصميم البرامج</h4>
+                                        <h4>12 يونيو 2018</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="latest-tweets">
+                                <h3>أحدث التغريدات</h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <span><i class="fab fa-twitter"></i></span>
+                                            @TamerImran: قالوا: "أنت كما ترى نفسك، فإذا
+                                            نفسك ضعيفًا ستُصبِحُ ضعيفًا، وإذا رأيت نفسك
+                                            فأنت كذلك، والعكس..". قلت: عفوًا،… 18 ساعة
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span><i class="fab fa-twitter"></i></span>
+                                            @TamerImran: قالوا: "أنت كما ترى نفسك، فإذا
+                                            نفسك ضعيفًا ستُصبِحُ ضعيفًا، وإذا رأيت نفسك
+                                            فأنت كذلك، والعكس..". قلت: عفوًا،… 18 ساعة
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span><i class="fab fa-twitter"></i></span>
+                                            @TamerImran: قالوا: "أنت كما ترى نفسك، فإذا
+                                            نفسك ضعيفًا ستُصبِحُ ضعيفًا، وإذا رأيت نفسك
+                                            فأنت كذلك، والعكس..". قلت: عفوًا،… 18 ساعة
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="follow-us">
+                                <h3>تابعنا الآن</h3>
+                                <h4>تابعنا الآن على السوشيال ميديا ليصلك الجديد.</h4>
+                                <ul class="list-inline text-center">
+                                    <li class="list-inline-item"><a href=""><span><i class="fab fa-snapchat-ghost"></i></span></a></li>
+                                    <li class="list-inline-item"><a href=""><span><i class="fab fa-twitter"></i></span></a></li>
+                                    <li class="list-inline-item"><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+                                </ul>
+                                <h5>القائمة البريدية</h5>
+                                <h4>اشترك في قائمتنا البريدية ليصلدك جديد الموقع.</h4>
+                                <form action="">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="ادخل البريد الالكتروني" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+                                        <div class="input-group-prepend">
+                                            <a class="input-group-text" id="btnGroupAddon2">اشترك</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <div class="">
+                            <img src="imgs/riyad-logo.png" alt="">
+                        </div>
+                        <div class=" cpy auto-margin">جميع الحقوق محفوظة لجمعية البر الخيرية © 2018 </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--End Footer Section-->
+    </content>
+
+
+
+
+
+
+
+
+
+
+    <!--Jquery Minified JS-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <!--Owl Carousel JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--Wow Js-->
+    <script src="js/wow.min.js"></script>
+    <!--Bootstrap Minified JS-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--FontAwesome Scripts-->
+    <script src="js/all.js"></script>
+
+    <!--Main Script-->
+    <script src="js/script.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

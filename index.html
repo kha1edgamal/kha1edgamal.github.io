@@ -1,0 +1,951 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="author" content="Khalid Jamal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imgs/favicon.png">
+    <!--Bootstrap Minified-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
+    <!--FontAwesome Styles-->
+    <link rel="stylesheet" href="css/all.css">
+    <!--Animate.css-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--Main Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Media Queries-->
+    <link rel="stylesheet" href="css/media.css">
+    <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="preload">
+    <!-- Back to top button -->
+    <a id="button"></a>
+    <!--Start Preloader Section-->
+    <div class="screen">
+        <div class="loader">
+            <!--Preloader HTML-->
+            <div class="dots-loader"></div>
+        </div>
+    </div>
+    <!--End Preloader Section-->
+    <content id="myContent">
+        <!--Start Header Section-->
+        <header>
+
+            <div class="top-header">
+                <div class="container">
+                    <div class="top-content wow fadeInDown" data-wow-delay=".5s">
+                        <div class="right-side">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <span><i class="fas fa-phone"></i></span>
+                                    <span>0144350012</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span><i class="fas fa-envelope"></i></span>
+                                    <span>br-536@hotmail.com</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <span>تبوك - محافظة ضباء - قرية الخريبة</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="left-side">
+                            <ul class="list-inline-item socials">
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!--Screen-Navbar-->
+                <nav class="screen-nav wow fadeIn" style="display: flex">
+                    <div class="right-side">
+                        <img src="imgs/logo.png" alt="Logo..">
+                    </div>
+                    <div class="center-side">
+                        <ul class="list-inline-item ">
+                            <li class="list-inline-item"><a href="#">الرئيسية</a></li>
+                            <li class="list-inline-item"><a href="#">من نحن</a></li>
+                            <li class="list-inline-item menu-item-has-children">
+                                <a href="#">البرامج</a> <span><i class="fas fa-chevron-down"></i></span>
+                                <ul class="sub-menu">
+                                    <li><a href="#">برنامج 1</a></li>
+                                    <li><a href="#">برنامج 2</a></li>
+                                    <li><a href="#">برنامج 3</a></li>
+                                    <li><a href="#">برنامج 4</a></li>
+                                    <li><a href="#">برنامج 5</a></li>
+                                    <li><a href="#">برنامج 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item menu-item-has-children">
+                                <a href="#" style="padding-left: 4px;">الموظفون</a><span><i class="fas fa-chevron-down"></i></span>
+                                <ul class="sub-menu">
+                                    <li><a href="#">اعضاء مجلس الادارة</a></li>
+                                    <li><a href="#">اعضاء الجمعية العمومية</a></li>
+                                    <li><a href="#">الموظفون</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="list-inline-item"><a href="#">سياسات الجمعية</a></li>
+                            <li class="list-inline-item"><a href="#">القوايم المالية</a></li>
+                            <li class="list-inline-item"><a href="#">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-side">
+                        <a href="#">تبرع الآن</a>
+                    </div>
+                </nav>
+                <!--Mobile-Navbar-->
+                <nav class="mobile-nav" data-wow-delay="1s" style="display: none">
+                    <img src="imgs/logo.png" alt="Logo..">
+                    <div class="button">
+                        <a class="btn-open" href="#"></a>
+                    </div>
+                    <div class="overlay">
+                        <div class="wrap">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        من نحن
+                                    </a>
+                                </li>
+                                <li class="menu-item-has-children" id="ourProgramsBtn">
+                                    <a href="#">
+                                        البرامج
+                                    </a>
+                                    <span id="drop-arrow-1"><i class="fas fa-chevron-down"></i></span>
+                                </li>
+                                <div class="sub-menu" id="ourProgramsSub" style="display:none">
+                                    <a>برنامج 1</a>
+                                    <a>برنامج 2</a>
+                                    <a>برنامج 3</a>
+                                    <a>برنامج 4</a>
+                                </div>
+                                <li class="menu-item-has-children" id="employersBtn">
+                                    <a href="#">
+                                        الموظفون
+                                    </a>
+                                    <span id="drop-arrow-2"><i class="fas fa-chevron-down"></i></span>
+                                </li>
+                                <div class="sub-menu" id="employersSub" style="display:none">
+                                    <a>اعضاء مجلس الادارة</a>
+                                    <a>اعضاء الجمعية العمومية</a>
+                                    <a>الموظفون</a>
+                                </div>
+                                
+                                <li>
+                                    <a href="#">
+                                        سياسات الجمعية
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        القوايم المالية
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        تواصل معنا
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr>
+
+                            <div class="social">
+                                <a href="#">
+                                    <div class="social-icon">
+                                        <i class="fab fa-snapchat-ghost"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--End Header Section-->
+
+        <!--Start Hero Section-->
+        <section class="hero">
+            <div class="slider">
+                <div id="heroSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/slider_1.png" alt="Slider Image">
+                            <div class="carousel-caption  d-md-block">
+                                <h5 class="wow fadeIn" data-wow-delay="1.2s">جمعية البر الخيرية بمركز الخريبة</h5>
+                                <p class="wow fadeIn" data-wow-delay="1.4s">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى</p>
+                                <a class="wow fadeIn" data-wow-delay="1.6s">اقرأ المزيد</a>
+                                <a class="wow fadeIn" data-wow-delay="1.8s">تبرع الآن</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/slider_1.png" alt="Slider Image">
+                            <div class="carousel-caption  d-md-block">
+                                <h5 class="wow fadeIn" data-wow-delay="1s">جمعية البر الخيرية بمركز الخريبة</h5>
+                                <p class="wow fadeIn" data-wow-delay="1.2s">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى</p>
+                                <a class="wow fadeIn" data-wow-delay="1.4s">اقرأ المزيد</a>
+                                <a class="wow fadeIn" data-wow-delay="1.6s">تبرع الآن</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/slider_1.png" alt="Slider Image">
+                            <div class="carousel-caption  d-md-block">
+                                <h5 class="wow fadeIn" data-wow-delay="1s">جمعية البر الخيرية بمركز الخريبة</h5>
+                                <p class="wow fadeIn" data-wow-delay="1.2s">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى</p>
+                                <a class="wow fadeIn" data-wow-delay="1.4s">اقرأ المزيد</a>
+                                <a class="wow fadeIn" data-wow-delay="1.6s">تبرع الآن</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev wow fadeInLeft" data-wow-delay="2s" href="#heroSlider" role="button" data-slide="prev">
+                        <span class="prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next wow fadeInRight" data-wow-delay="2s" href="#heroSlider" role="button" data-slide="next">
+                        <span class="next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="box box-1 wow bounceIn" data-wow-delay="1s">
+                                <img src="imgs/services-1.png" alt="Services Image">
+                                <h3>سرعة الاستجابة</h3>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد مثل</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="box box-2 wow bounceIn" data-wow-delay="1.2s">
+                                <img src="imgs/services-2.png" alt="Services Image">
+                                <h3>احدث الخدمات</h3>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد مثل</p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="box box-3 wow bounceIn" data-wow-delay="1.4s">
+                                <img src="imgs/services-3.png" alt="Services Image">
+                                <h3>متطوعين متخصصين</h3>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد مثل</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Hero Section-->
+        <!--Start About-Us Section-->
+        <section class="about-us wow fadeIn">
+            <div class="container">
+                <div class="row">
+                    <div class="order-2 order-sm-2 order-xl-1 col-xl-6 col-sm-12">
+                        <img src="imgs/About-Us.png" alt="About-Us Image">
+                    </div>
+                    <div class="order-1 order-sm-1 order-xl-2 col-xl-6 col-sm-12">
+                        <div class="about-content">
+                            <h1>عن الجمعية</h1>
+                            <p class="p1">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى</p>
+                            <p class="p2"> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+                            <a class="wow pulse" data-wow-delay="1s" data-wow-iteration="2">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End About-Us Section-->
+        <!--Start Share-Us Section-->
+        <section class="share-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 auto-margin">
+                        <h3>شارك الآن في مساعدة الآخرين</h3>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="b1 wow bounceInLeft">تطوع الآن</a>
+                        <a class="b2 wow bounceInLeft" data-wow-delay="1s">تبرع الآن</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Share-Us Section-->
+        <!--Start programs Section-->
+        <section class="programs text-center">
+            <h2>برامج الجمعية</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="right-content text-right">
+                            <h1 class="wow fadeInRightBig">برامج اعالة الفقراء و المحتاجين</h1>
+                            <p class="wow fadeInRightBig" data-wow-delay=".5s">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                            </p>
+                            <a class="b1 wow bounceInRight" data-wow-delay="1s">تبرع الآن</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="imgs/our-programs-1.png" alt="Program Image" class="img-1">
+                    </div>
+                    <div class="order-2 order-lg-1 col-lg-6">
+                        <img src="imgs/our-programs-2.png" alt="Program Image" class="img-2">
+                    </div>
+                    <div class="order-1 order-lg-2 col-lg-6">
+                        <div class="left-content text-right">
+                            <h1 class="wow fadeInLeftBig">برامج اعالة الفقراء و المحتاجين</h1>
+                            <p class="wow fadeInLeftBig" data-wow-delay=".5s">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                            </p>
+                            <a class="b2 wow bounceInLeft">تبرع الآن</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="readmore wow pulse" data-wow-delay="1s" data-wow-iteration="2">اقرأ المزيد</a>
+            </div>
+        </section>
+        <!--End programs Section-->
+
+        <!--Start our-mission section-->
+        <section class="our-mission text-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>مهام الجمعية</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="box box-1">
+                                    <div class="wow fadeIn">
+                                        <img src="imgs/our-mission-1.png" alt="">
+                                        <span>نص تجريبي</span>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد مثل</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+
+                                <div class="box box-2">
+
+                                    <div class="wow fadeIn" data-wow-delay=".4s">
+                                        <img src="imgs/our-mission-2.png" alt="">
+                                        <span>نص تجريبي</span>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد مثل</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="box box-3">
+
+                                    <div class="wow fadeIn" data-wow-delay=".8s">
+                                        <img src="imgs/our-mission-3.png" alt="">
+                                        <span>نص تجريبي</span>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد مثل</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="box box-4">
+
+                                    <div class="wow fadeIn" data-wow-delay="1.2s">
+                                        <img src="imgs/our-mission-4.png" alt="">
+                                        <span>نص تجريبي</span>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد مثل</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="1.5s">
+                        <h2>الفعاليات</h2>
+                        <div class="left-side">
+                            <ul class="main-list">
+                                <li>
+                                    <span class="date">25<br>Sep</span>
+                                    <ul class="sub-list">
+                                        <li>
+                                            <h5>ندوات حديثة المشاريع</h5>
+                                        </li>
+                                        <li>
+                                            <span><i class="far fa-clock"></i></span>
+                                            <span>5 مساء - 7 مساء </span>
+                                            <span><i class="fas fa-map-marker-alt"></i></span>
+                                            <span>الرياض</span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <span class="date">2<br>OCT</span>
+                                    <ul class="sub-list">
+                                        <li>
+                                            <h5>ندوات حديثة المشاريع</h5>
+                                        </li>
+                                        <li>
+                                            <span><i class="far fa-clock"></i></span>
+                                            <span>5 مساء - 7 مساء </span>
+                                            <span><i class="fas fa-map-marker-alt"></i></span>
+                                            <span>الرياض</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="date">15<br>OCT</span>
+                                    <ul class="sub-list">
+                                        <li>
+                                            <h5>ندوات حديثة المشاريع</h5>
+                                        </li>
+                                        <li>
+                                            <span><i class="far fa-clock"></i></span>
+                                            <span>5 مساء - 7 مساء </span>
+                                            <span><i class="fas fa-map-marker-alt"></i></span>
+                                            <span>الرياض</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End our-mission section-->
+        <!--Start counter section-->
+        <section class="counter text-right" style="background:url(imgs/parralex.png)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 wow fadeIn" style="z-index: 1">
+                        <h1>نحن نحب مساعدة جميع الفقراء و المحتاجين الذين يعانون من مشاكل في العالم. بعد 15 عامًا ، حققنا العديد من الأهداف</h1>
+                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                    </div>
+                    <div class="col-lg-6" style="z-index: 1; margin: auto 0">
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-center">
+                                <img src="imgs/counter-1.png " class="wow swing" alt="Counter Image">
+                                <h2 class="count" data-count="2000">0</h2>
+                                <h5>متطوع</h5>
+                            </li>
+                            <li class="list-inline-item text-center">
+                                <img src="imgs/counter-2.png" class="wow swing" alt="Counter Image">
+                                <h2 class="count" data-count="3000">100</h2>
+                                <h5>اسرة مكفوله</h5>
+                            </li>
+                            <li class="list-inline-item text-center">
+                                <img src="imgs/counter-3.png" class="wow swing" alt="Counter Image">
+                                <h2 class="count" data-count="1400">200</h2>
+                                <h5>المتبرعين</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End counter section-->
+
+        <!--Start Gallery Section-->
+
+
+        <section class="gallery " dir="ltr">
+            <h1 class="text-center">معرض الصور</h1>
+            <div id="gallerySlider" class="carousel slide wow fadeIn" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <a href="imgs/gallery-1-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-1.png" class="img-fluid">
+                                            </div>
+
+                                        </a>
+                                        <a href="imgs/gallery-1-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-1.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-1-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-1.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-1-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-1.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="imgs/gallery-1-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-1.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-1-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-1.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-1-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-1.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-1-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-1.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <a href="imgs/gallery-2-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-2.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-2-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-2.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-2-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-2.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-2-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-2.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="imgs/gallery-2-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-2.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-2-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-2.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-2-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-2.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="imgs/gallery-2-light.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-3">
+                                            <div class="overlay"></div>
+                                            <button class="modal-btn"><i class="fas fa-arrows-alt-h"></i></button>
+                                            <div class="zoomAnim" style="height: 100%; overflow:hidden">
+                                                <img src="imgs/gallery-2.png" class="img-fluid">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#gallerySlider" role="button" data-slide="prev">
+                    <span class="prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#gallerySlider" role="button" data-slide="next">
+                    <span class="next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+        <!--End Gallery Section-->
+
+        <!--Start News Section-->
+        <section class="news">
+            <h1 class="text-center">آخر الاخبار</h1>
+            <div class="container">
+
+                <div class="card-deck">
+                    <div class="card wow fadeIn">
+                        <div class="card-image">
+                            <img class="card-img-top" src="imgs/news-1.PNG" alt="Card image cap">
+                        </div>
+                        <div class="details">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <span>344</span> اعجاب
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>566</span> تعليق
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>233</span> مشاركة
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="card-body text-right">
+                            <div class="card-title">
+                                <div class="date">
+                                    <h5>14</h5>
+                                    <h5>OCT</h5>
+                                </div>
+                                <span>التدريب للمتطوعين</span>
+                            </div>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،لقد تم توليد هذا النص</p>
+                            <a>اقرأ المزيد</a>
+
+                        </div>
+                    </div>
+                    <div class="card wow fadeIn" data-wow-delay=".5s">
+                        <div class="card-image">
+                            <img class="card-img-top" src="imgs/news-2.PNG" alt="Card image cap">
+                        </div>
+
+                        <div class="details">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    344 اعجاب
+                                </li>
+                                <li class="list-inline-item">
+                                    566 تعليق
+                                </li>
+                                <li class="list-inline-item">
+                                    233 مشاركة
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="card-body text-right">
+                            <div class="card-title">
+                                <div class="date">
+                                    <h5>14</h5>
+                                    <h5>OCT</h5>
+                                </div>
+                                <span>تنظيم الفعاليات و المؤتمرات</span>
+                            </div>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،لقد تم توليد هذا النص</p>
+                            <a>اقرأ المزيد</a>
+
+                        </div>
+                    </div>
+                    <div class="card wow fadeIn" data-wow-delay="1s">
+                        <div class="card-image">
+                            <img class="card-img-top" src="imgs/news-3.PNG" alt="Card image cap">
+                        </div>
+
+                        <div class="details">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    344 اعجاب
+                                </li>
+                                <li class="list-inline-item">
+                                    566 تعليق
+                                </li>
+                                <li class="list-inline-item">
+                                    233 مشاركة
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="card-body text-right">
+                            <div class="card-title">
+                                <div class="date">
+                                    <h5>14</h5>
+                                    <h5>OCT</h5>
+                                </div>
+                                <span>احتفالات ليوم اليتيم</span>
+                            </div>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،لقد تم توليد هذا النص</p>
+                            <a>اقرأ المزيد</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <!--End News Section-->
+
+        <!--Start Footer Section-->
+        <footer>
+            <div class="container">
+                <div class="top-footer text-right wow fadeIn">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="info">
+                                <img src="imgs/logo-footer.png" alt="Footer Logo">
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد</p>
+                                <h3>تواصل معنا</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-phone"></i></span>
+                                        <span>تبوك - محافظة ضباء - قرية الخريبة</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-envelope"></i></span>
+                                        <span>br-536@hotmail.com</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-map-marker-alt"></i></span>
+                                        <span>دبى 12627، الامارات العربية المتحدة</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="latest-news">
+                                <h3>آخر الاخبار</h3>
+                                <div class="item-1 items">
+                                    <img src="imgs/footer-news.png" alt="">
+                                    <div>
+                                        <h4>التدريب وتصميم البرامج</h4>
+                                        <h4>12 يونيو 2018</h4>
+                                    </div>
+                                </div>
+                                <div class="item-2 items">
+                                    <img src="imgs/footer-news.png" alt="">
+                                    <div>
+                                        <h4>التدريب وتصميم البرامج</h4>
+                                        <h4>12 يونيو 2018</h4>
+                                    </div>
+                                </div>
+                                <div class="item-3 items">
+                                    <img src="imgs/footer-news.png" alt="">
+                                    <div>
+                                        <h4>التدريب وتصميم البرامج</h4>
+                                        <h4>12 يونيو 2018</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="latest-tweets">
+                                <h3>أحدث التغريدات</h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <span><i class="fab fa-twitter"></i></span>
+                                            @TamerImran: قالوا: "أنت كما ترى نفسك، فإذا
+                                            نفسك ضعيفًا ستُصبِحُ ضعيفًا، وإذا رأيت نفسك
+                                            فأنت كذلك، والعكس..". قلت: عفوًا،… 18 ساعة
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span><i class="fab fa-twitter"></i></span>
+                                            @TamerImran: قالوا: "أنت كما ترى نفسك، فإذا
+                                            نفسك ضعيفًا ستُصبِحُ ضعيفًا، وإذا رأيت نفسك
+                                            فأنت كذلك، والعكس..". قلت: عفوًا،… 18 ساعة
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span><i class="fab fa-twitter"></i></span>
+                                            @TamerImran: قالوا: "أنت كما ترى نفسك، فإذا
+                                            نفسك ضعيفًا ستُصبِحُ ضعيفًا، وإذا رأيت نفسك
+                                            فأنت كذلك، والعكس..". قلت: عفوًا،… 18 ساعة
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="follow-us">
+                                <h3>تابعنا الآن</h3>
+                                <h4>تابعنا الآن على السوشيال ميديا ليصلك الجديد.</h4>
+                                <ul class="list-inline text-center">
+                                    <li class="list-inline-item"><a href=""><span><i class="fab fa-snapchat-ghost"></i></span></a></li>
+                                    <li class="list-inline-item"><a href=""><span><i class="fab fa-twitter"></i></span></a></li>
+                                    <li class="list-inline-item"><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+                                </ul>
+                                <h5>القائمة البريدية</h5>
+                                <h4>اشترك في قائمتنا البريدية ليصلدك جديد الموقع.</h4>
+                                <form action="">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="ادخل البريد الالكتروني" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+                                        <div class="input-group-prepend">
+                                            <button type="submit" class="input-group-text" id="btnGroupAddon2">اشترك</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <div class="">
+                            <img src="imgs/riyad-logo.png" alt="">
+                        </div>
+                        <div class=" cpy auto-margin">جميع الحقوق محفوظة لجمعية البر الخيرية © 2018 </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--End Footer Section-->
+    </content>
+
+
+
+
+
+
+
+
+
+
+    <!--Jquery Minified JS-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+    <!--Wow Js-->
+    <script src="js/wow.min.js"></script>
+    <!--Bootstrap Minified JS-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--FontAwesome Scripts-->
+    <script src="js/all.js"></script>
+
+    <!--Main Script-->
+    <script src="js/script.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        /*Counter Script*/
+        var a = 0;
+        $(window).scroll(function() {
+
+            var oTop = $('.counter').offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $('.count').each(function() {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                            countNum: countTo
+                        },
+
+                        {
+
+                            duration: 3000,
+                            easing: 'swing',
+                            step: function() {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function() {
+                                $this.text(this.countNum);
+                                //alert('finished');
+                            }
+
+                        });
+                });
+                a = 1;
+            }
+
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
